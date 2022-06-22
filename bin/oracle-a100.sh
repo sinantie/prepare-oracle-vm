@@ -2,9 +2,11 @@
 set -e
 
 # ---------------------- Attach partition to /scratch --------------------- #
+sudo mkdir /scratch
+sudo chmod 777 /scratch
 sudo mkfs.ext4 /dev/nvme0n1
 sudo mount /dev/nvme0n1 /scratch
-sudo chmod 777 /scratch
+
 
 # ---------------------- Install pyenv for python sanity --------------------- #
 curl https://pyenv.run | bash
