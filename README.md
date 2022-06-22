@@ -25,7 +25,7 @@ TBA -->
 Run the following command to download and run the script:
 
 ```bash
-curl -s -S -L https://raw.githubusercontent.com/amitkparekh/prepare-oracle-vm/main/bin/oracle-a100.sh | bash
+curl -s -S -L https://raw.githubusercontent.com/sinantie/prepare-oracle-vm/anaconda/bin/oracle-a100.sh | bash
 ```
 
 ### What does the script to?
