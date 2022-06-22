@@ -7,7 +7,6 @@ sudo chmod 777 /scratch
 sudo mkfs.ext4 /dev/nvme0n1
 sudo mount /dev/nvme0n1 /scratch
 
-
 # ---------------------- Install pyenv for python sanity --------------------- #
 curl https://pyenv.run | bash
 
