@@ -34,6 +34,13 @@ NVIDIA_DRIVER_VERSION=$(dpkg -l | grep nvidia-driver- | cut -d ' ' -f 3 | cut -d
 	sudo apt install -y "cuda-drivers-fabricmanager-$NVIDIA_DRIVER_VERSION" &&
 	sudo service nvidia-fabricmanager start
 
+
+# ------------------------------ Install Anaconda ---------------------------- #
+wget https://repo.anaconda.com/archive/Anaconda3-2022.05-Linux-x86_64.sh && 
+  sudo chmod u+x Anaconda3-2022.05-Linux-x86_64.sh &&
+	./Anaconda3-2022.05-Linux-x86_64.sh
+
+
 # ------------------------------ Install Docker ------------------------------ #
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg |
 	sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg &&
